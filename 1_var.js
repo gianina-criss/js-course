@@ -106,7 +106,7 @@ var myStr = "learning to code is ";
 myStr += someAdjective;
 console.log(myStr);
 
-// find lenght of string
+// find lenght of string with method lenght
 var lastNameLength = 0;
 var lastName = "Gianina";
 lastNameLength = lastName.length;
@@ -116,4 +116,42 @@ console.log(lastNameLength);
 var firstLetterOfLastName = "";
 var lastName = "Gianina";
 firstLetterOfLastName = lastName[0];
-console.log(firstLetterOfLastName)
+console.log(firstLetterOfLastName);
+
+var firstName = "Cristina";
+var secondLetterOfFirstName = firstName[1];
+console.log(secondLetterOfFirstName);
+
+var familyName = "Stefan";
+var thirdLetterOfTheFamilyName = familyName[2];
+console.log(thirdLetterOfTheFamilyName);
+
+// string imutability -----can change the name value
+var myStr = "jello world";
+myStr = "hello world";
+console.log(myStr);
+
+var myStr = "how are you";
+myStr = "how are you today?";
+console.log(myStr);
+
+// brakets to find a letter in string
+var firstName = "Gianina";
+var lastLetterOfTheFirstName = firstName[firstName.length - 1];
+console.log(lastLetterOfTheFirstName);
+
+var lastName = "Cristine";
+var lastLetterOfTheLastName = lastName[lastName.length - 1];
+console.log(lastLetterOfTheLastName);
+
+var familyName = "Stefan";
+var thirdLastNameOfTheFamilyName = familyName[familyName.length - 3];
+console.log(thirdLastNameOfTheFamilyName);
+
+// word blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "the " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
