@@ -11,7 +11,7 @@ console.log(age);
 
 /*Naming Conventions
  * - Only letters, numbers, underscors and dollar signs
- * - Can't start with a number
+ * - the name Can't start with a number
  * */
 
 /**Multi-Word Formatting
@@ -52,5 +52,5 @@ const person = {
 };
 person.name = "Jhon";
 console.log(person);
-person.email = "brad@hmail.com";
+person.email = "brad@gmail.com";
 console.log(person);
