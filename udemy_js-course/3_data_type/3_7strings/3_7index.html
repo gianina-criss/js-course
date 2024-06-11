@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>String</title>
+        <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
+    </head>
+    <body>
+        <h1>String</h1>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="/udemy_js-course/3_data_type/3_0intro/3_0intro.html">Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7intro.html">String Def</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="/udemy_js-course/2_variable/2_1console/2_1index.html">Console Log</a>
+                    <a href="/udemy_js-course/2_variable/2_2variables/2_2index.html">Variables</a>
+                    <a href="/udemy_js-course/3_data_type/3_1primitive-data_types/3_1index.html">Primitive Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_2reference_typs/3_2index.html">Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_3primitive_typs-vs-reference_typs/3_3index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_4type_convention/3_4index.html">Type convention</a>
+                    <a href="/udemy_js-course/3_data_type/3_5operators/3_5index.html">Operators</a>
+                    <a href="/udemy_js-course/3_data_type/3_6type_coercion/3_6index.html">Type Coercion</a>
+                    <a href="/udemy_js-course/3_data_type/3_8numbers/3_8index.html">Numbers</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7index.html">String</a>
+                </nav>
+            </div>
+            <pre><code>
+           // String
+
+            let a; //declare a variable
+            
+            const name = "jhon";
+            const age = 31;
+            
+            x = "hello, my name is " + name + " and i am " + age + " years old"; // concatenation
+            console.log(x);
+            
+            // do the same thing using -- Tamplete Literals
+            let b; //declare a variable
+            
+            const lastname = "jhon";
+            const number = 31;
+            b = `hello, my name is ${name} and i am number ${number}`;
+            console.log(b);
+            
+            // String Properties and Methods
+            
+            const c = "hello"; //use a propertie
+            d = c.length;
+            console.log(d);
+            
+            // const e = "hello"; -- this is a string, the line above is how to change a string into a string object
+            const e = new String("hello"); //becomes an object - we use a method
+            f = typeof e;
+            console.log(f); // object
+            
+            // acces value by key
+            g = c[0]; // find out the first latter
+            console.log(g); // h
+            
+            // Prototipe - shows the methods that can be used with string
+            const i = "hello you!";
+            h = i.__proto__;
+            console.log(h);
+            
+            // methods
+            h = i.toUpperCase(i); // all uppercase
+            console.log(h);
+            h = i.toLowerCase(i); // all lowercase
+            console.log(h);
+            h = i.charAt(1); // shows a letter, index
+            console.log(h);
+            h = i.indexOf("l"); // shows the index from where is the letter
+            console.log(h);
+            h = i.substring(1, 5); // shows the letters from the first index to the second
+            console.log(h);
+            h = i.substring(3); // starts at 3
+            console.log(h);
+            h = i.slice(-11); // the diference between this and substring is that this is able to start from a negetiv number
+            console.log(h);
+            h = i.trim(); // get rid of spaces
+            console.log(h);
+            h = i.replace("you", "all"); // replace a word
+            console.log(h);
+            h = i.includes("you"); // serch for a string, true if the word exist, false if not
+            console.log(h);
+            h = i.valueOf(); // return the primitive value of a string
+            console.log(h);
+            h = i.split(" "); //
+            console.log(h);
+            </code></pre>
+        </div>
+    </body>
+</html>

@@ -4,9 +4,102 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Operators</title>
+        <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
     </head>
     <body>
         <h1>Operators</h1>
         <script src="3_5script.js"></script>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="/udemy_js-course/3_data_type/3_0intro/3_0intro.html">Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7intro.html">String Def</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="/udemy_js-course/2_variable/2_1console/2_1index.html">Console Log</a>
+                    <a href="/udemy_js-course/2_variable/2_2variables/2_2index.html">Variables</a>
+                    <a href="/udemy_js-course/3_data_type/3_1primitive-data_types/3_1index.html">Primitive Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_2reference_typs/3_2index.html">Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_3primitive_typs-vs-reference_typs/3_3index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_4type_convention/3_4index.html">Type convention</a>
+                    <a href="/udemy_js-course/3_data_type/3_5operators/3_5index.html">Operators</a>
+                    <a href="/udemy_js-course/3_data_type/3_6type_coercion/3_6index.html">Type Coercion</a>
+                    <a href="/udemy_js-course/3_data_type/3_8numbers/3_8index.html">Numbers</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7index.html">String</a>
+                </nav>
+            </div>
+            <pre><code>
+           // 1 Arithmetic operators
+            let x;
+            x = 5 + 5;
+            x = 5 - 5;
+            x = 5 * 5;
+            x = 5 / 5;
+            x = 5 % 5;
+            console.log(x);
+            
+            //Concatenation 
+            y = "hello" + " world";
+            console.log(y);
+            
+            // Exponenet
+            z = 2 ** 3;
+            console.log(z);
+            
+            // Increment
+            a = 1;
+            a = a + 1;
+            console.log(a);
+            a++;
+            console.log(a);
+            
+            // decrement
+            console.group("num");
+            b = 2;
+            // b = b - 1;
+            // console.log(b);
+            b--;
+            console.log(b);
+            console.groupEnd;
+            
+            // 2 Assigment Operators
+            c = 10;
+            // c = c + 5;
+            c += 5;
+            // c -= 5;
+            // c *= 5;
+            // c /= 5;
+            // c %= 5;
+            // c **= 5;
+            console.log(c);
+            
+            // 3 Comparison Operators
+            // == - comaration operator of equal
+            g = 2 == 2; // only evaluets the value
+            console.log(g); //true 2=2
+            g = 2 == 4;
+            console.log(g); // false 2=4
+            
+            // === - triple qual
+            d = 2 === 2; //evaluets the value and the typeof
+            console.log(d);
+            
+            // not equal - !=
+            e = 3 != 3;
+            console.log(e); //false
+            e = 3 != 2;
+            console.log(e); //true
+            
+            // grader - >
+            f = 10 > 5;
+            console.log(f);
+            f = 10 < 5;
+            console.log(f);
+            f = 10 <= 5;
+            console.log(f);
+            f = 10 >= 5;
+            console.log(f);
+            </code></pre>
+        </div>
     </body>
 </html>

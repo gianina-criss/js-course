@@ -2,18 +2,67 @@
     box-sizing: border-box;
 }
 body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    width: 900px;
+    margin: auto;
 }
 
-div {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
+.page-content {
+    position: relative;
 }
-h1 {
+
+.navigation {
+    position: sticky;
+    top: 0;
+}
+
+.section-1 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(88, 90, 219);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-1 a {
+    text-decoration: none;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.section-1 a:hover {
+    cursor: pointer;
+    color: rgba(219, 128, 10, 0.904);
+}
+
+.section-2 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(43, 10, 161);
+    height: fit-content;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-2 a:hover {
+    cursor: pointer;
+    color: rgba(216, 125, 7, 0.849);
+}
+
+.section-2 a {
+    text-decoration: none;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+h1,
+h2 {
     text-align: center;
 }
 
@@ -26,6 +75,7 @@ p {
 ul {
     margin: 10px 0 10px 0;
     list-style: circle;
+    padding: 5px;
 }
 
 ul li {
@@ -34,6 +84,13 @@ ul li {
 }
 span {
     color: rgb(14, 42, 206);
+}
+
+pre {
+    text-align: start;
+    color: rgb(255, 166, 0);
+    font-size: 20px;
+    background-color: black;
 }
 
 strong {

@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Primitoive Typs vs Reference Types</title>
         <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
+        <title>variables</title>
     </head>
     <body>
-        <h1>Primitoive Typs vs Reference Types</h1>
-        <script src="3_3script.js"></script>
+        <h1>Variables</h1>
+        <script src="2_3script.js"></script>
         <div class="page-content">
             <div class="navigation">
                 <nav class="section-1">
@@ -29,53 +29,62 @@
                 </nav>
             </div>
             <pre><code>
-            //  this values are stored on the stack
-            const name = "jhon";
-            const age = 30;
+            // Ways to declare a variable
+            // var, let, const
             
-            // reference value are stored on the heap
+            let firstName = "John";
+            let lastName = "Doe";
+            console.log(firstName, lastName);
+            
+            let age = 30;
+            
+            console.log(age);
+            
+            /*Naming Conventions
+             * - Only letters, numbers, underscors and dollar signs
+             * - the name Can't start with a number
+             * */
+            
+            /**Multi-Word Formatting
+             *  firstName = camelCase
+             *  first_name = underscore
+             *  FirstName = PascalCase
+             * firstname = lowercase
+             * */
+            
+            // Re-assigning Variables
+            age = 31;
+            console.log(age);
+            
+            let score;
+            score = 1;
+            console.log(score);
+            
+            if (true) {
+                score = score + 1;
+            }
+            console.log(score);
+            
+            /**const variables can't be re-assign
+             * const x = 100;
+             * x = 200; -- can't do that
+             */
+            
+            /** can not declare and not initialize
+             * const score; can,t do that
+             */
+            
+            const arr = [1, 2, 3, 4];
+            arr.push(5);
+            console.log(arr);
+            
             const person = {
-                name: "brad",
-                age: 40,
+                name: "Brad",
             };
-            let newName = name;
-            console.log(name, newName);
-            
-            const person1 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName1 = name;
-            newName1 = "jhonathan";
-            console.log(name, newName1);
-            
-            const person2 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName2 = name;
-            let newPerson = person2;
-            console.log(name, newName2);
-            console.log(person2, newPerson);
-            
-            const person3 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName3 = name;
-            let newPerson1 = person3;
-            newPerson1.name = "bradly";
-            console.log(name, newName2);
-            console.log(person3, newPerson1);
-            
-            //cosmin exemplu
-            console.log("Cosmin exemplu");
-            console.log(person3);
-            console.log(person3["name"], person3["age"]);
-            console.log(person3.name, person3.age);
-            person3.name = "Gianina";
-            console.log(person3);
-            </code></pre>
+            person.name = "Jhon";
+            console.log(person);
+            person.email = "brad@gmail.com";
+            console.log(person);</code></pre>
         </div>
     </body>
 </html>

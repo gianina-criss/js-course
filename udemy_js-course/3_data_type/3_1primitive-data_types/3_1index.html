@@ -4,9 +4,73 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Primitiv Data Types</title>
+        <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
     </head>
     <body>
         <h1>Primitiv Data Types</h1>
         <script src="3_1script.js"></script>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="/udemy_js-course/3_data_type/3_0intro/3_0intro.html">Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7intro.html">String Def</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="/udemy_js-course/2_variable/2_1console/2_1index.html">Console Log</a>
+                    <a href="/udemy_js-course/2_variable/2_2variables/2_2index.html">Variables</a>
+                    <a href="/udemy_js-course/3_data_type/3_1primitive-data_types/3_1index.html">Primitive Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_2reference_typs/3_2index.html">Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_3primitive_typs-vs-reference_typs/3_3index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_4type_convention/3_4index.html">Type convention</a>
+                    <a href="/udemy_js-course/3_data_type/3_5operators/3_5index.html">Operators</a>
+                    <a href="/udemy_js-course/3_data_type/3_6type_coercion/3_6index.html">Type Coercion</a>
+                    <a href="/udemy_js-course/3_data_type/3_8numbers/3_8index.html">Numbers</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7index.html">String</a>
+                </nav>
+            </div>
+            <pre><code>
+            // string 
+            // typeof --- to get the type from a variable in this case string is the type
+            const firstName = "Sara";
+            console.log(firstName, typeof firstName);
+            
+            const lastName = "Muller";
+            console.log(lastName, typeof lastName);
+            
+            // number
+            const age = 30;
+            const output = age;
+            console.log(output, typeof output);
+            
+            const temp = 35.5;
+            const output1 = temp;
+            console.log(output1, typeof output1);
+            
+            //boolean
+            const hasKids = true;
+            const output2 = hasKids;
+            console.log(output2, typeof output2);
+            
+            // null
+            const apartmentNumber = null;
+            const output3 = apartmentNumber;
+            console.log(output3, typeof output3);
+            
+            // undefined
+            let score;
+            const output4 = score;
+            console.log(output4, typeof output4);
+            
+            //symbol
+            const id = Symbol("id");
+            const output5 = id;
+            console.log(output5, typeof output5);
+            
+            // bigint
+            const n = 414545444555n;
+            const output6 = n;
+            console.log(output6, typeof output6);
+            </code></pre>
+        </div>
     </body>
 </html>

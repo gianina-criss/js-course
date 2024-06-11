@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Primitoive Typs vs Reference Types</title>
+        <title>Type Coercian</title>
         <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
     </head>
     <body>
-        <h1>Primitoive Typs vs Reference Types</h1>
-        <script src="3_3script.js"></script>
+        <h1>Type Coercian</h1>
+        <script src="3_6script.js"></script>
         <div class="page-content">
             <div class="navigation">
                 <nav class="section-1">
@@ -29,52 +29,30 @@
                 </nav>
             </div>
             <pre><code>
-            //  this values are stored on the stack
-            const name = "jhon";
-            const age = 30;
+            let a;
+            a = 5 + "5";
+            console.log(a, typeof a); // 55 - because the last 5 is a string and it turns automat the first 5 into a string
+            a = 5 + null; // 5 - because null is coerc in to a 0
+            console.log(a, typeof a);
             
-            // reference value are stored on the heap
-            const person = {
-                name: "brad",
-                age: 40,
-            };
-            let newName = name;
-            console.log(name, newName);
+            a = 5 + Number("5"); // 10 - converting the string in to a number you get 10
+            console.log(a, typeof a);
             
-            const person1 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName1 = name;
-            newName1 = "jhonathan";
-            console.log(name, newName1);
+            // using multiply
+            let b;
+            b = 5 * "5"; // 25 - in this case convertet the string into a number
+            console.log(b, typeof b);
             
-            const person2 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName2 = name;
-            let newPerson = person2;
-            console.log(name, newName2);
-            console.log(person2, newPerson);
+            // //  plus null
+            let c;
+            c = 5 + null;
+            console.log(c, typeof c);
             
-            const person3 = {
-                name: "brad",
-                age: 40,
-            };
-            let newName3 = name;
-            let newPerson1 = person3;
-            newPerson1.name = "bradly";
-            console.log(name, newName2);
-            console.log(person3, newPerson1);
-            
-            //cosmin exemplu
-            console.log("Cosmin exemplu");
-            console.log(person3);
-            console.log(person3["name"], person3["age"]);
-            console.log(person3.name, person3.age);
-            person3.name = "Gianina";
-            console.log(person3);
+            //
+            d = Number(true); //  1 - true as a number is 1
+            d = Number(false); // 0 - false as a number si 0
+            d = 5 + true;
+            console.log(d, typeof d); // 6
             </code></pre>
         </div>
     </body>

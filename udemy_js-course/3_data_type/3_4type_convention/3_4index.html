@@ -4,9 +4,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Type Convention</title>
+        <link rel="stylesheet" href="/udemy_js-course/css/intro.css" />
     </head>
     <body>
         <h1>Type Convention</h1>
         <script src="/udemy_js-course/3_data_type/3_4type_convention/3_4script.js"></script>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="/udemy_js-course/3_data_type/3_0intro/3_0intro.html">Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7intro.html">String Def</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="/udemy_js-course/2_variable/2_1console/2_1index.html">Console Log</a>
+                    <a href="/udemy_js-course/2_variable/2_2variables/2_2index.html">Variables</a>
+                    <a href="/udemy_js-course/3_data_type/3_1primitive-data_types/3_1index.html">Primitive Data Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_2reference_typs/3_2index.html">Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_3primitive_typs-vs-reference_typs/3_3index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="/udemy_js-course/3_data_type/3_4type_convention/3_4index.html">Type convention</a>
+                    <a href="/udemy_js-course/3_data_type/3_5operators/3_5index.html">Operators</a>
+                    <a href="/udemy_js-course/3_data_type/3_6type_coercion/3_6index.html">Type Coercion</a>
+                    <a href="/udemy_js-course/3_data_type/3_8numbers/3_8index.html">Numbers</a>
+                    <a href="/udemy_js-course/3_data_type/3_7strings/3_7index.html">String</a>
+                </nav>
+            </div>
+            <pre><code>
+            // convert a string to a number, methode parseInt
+            let amound = "100";
+            amound = parseInt(amound);
+            console.log(amound, typeof amound);
+            
+            // convert a string into a number ussing unery method
+            let amound1 = "100";
+            amound1 = +amound1;
+            console.log(amound1, typeof amound1);
+            
+            // convert a string into a number ussing the number or number constructor
+            let amound2 = "100";
+            amound2 = Number(amound2);
+            console.log(amound2, typeof amound2);
+            
+            // convert number to a string, methode toString
+            let amound3 = 100;
+            amound3 = amound3.toString();
+            console.log(amound3, typeof amound3);
+            
+            // convert a number into a string ussing string or string constructor
+            let amound4 = 100;
+            amound4 = String(amound4);
+            console.log(amound4, typeof amound4);
+            
+            // convert a string decimal to a number
+            let amound5 = "99.5";
+            amound5 = parseFloat(amound5);
+            console.log(amound5, typeof amound5);
+            
+            //convert number to boolean
+            let amound6 = 1;
+            amound6 = Boolean(amound6);
+            console.log(amound6, typeof amound6);
+            </code></pre>
+        </div>
     </body>
 </html>
