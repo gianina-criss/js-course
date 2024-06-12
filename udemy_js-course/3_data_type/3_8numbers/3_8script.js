@@ -1,5 +1,6 @@
-const num = new Number(5);
+const num = 5;
 console.log(num);
+
 // to make the number --- string
 x = num.toString();
 console.log(x, typeof x);

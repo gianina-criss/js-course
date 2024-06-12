@@ -61,6 +61,21 @@ body {
     color: whitesmoke;
 }
 
+.chalenges {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(5, 5, 12);
+    height: 50px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.chalenges a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 h1,
 h2 {
     text-align: center;
@@ -91,6 +106,7 @@ pre {
     color: rgb(255, 166, 0);
     font-size: 20px;
     background-color: black;
+    overflow-x: auto;
 }
 
 strong {
