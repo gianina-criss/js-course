@@ -69,11 +69,17 @@ body {
     justify-content: start;
     align-items: center;
     gap: 20px;
+    padding: 5px;
 }
 
 .chalenges a {
     text-decoration: none;
     color: aliceblue;
+}
+
+.chalenges a:hover {
+    cursor: pointer;
+    color: rgba(131, 80, 14, 0.849);
 }
 
 h1,

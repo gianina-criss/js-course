@@ -1,3 +1,4 @@
+// make the word developer -- Developer
 const myString = "developer";
 // solution 1
 myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
