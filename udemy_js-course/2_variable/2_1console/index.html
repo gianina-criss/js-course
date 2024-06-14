@@ -39,29 +39,36 @@
                 </nav>
             </div>
             <pre><code>
-   console.log(100);
-
-   console.log("hello");
-   
-   console.log(20, "hello", true);
-   
-   const x = 50;
-   console.log(x);
-   
-   console.error("alert");
-   
-   console.warn("warning");
-   
-   console.table({ name: " Ana", email: "Ana@gmail.com" });
-   
-   console.group("simple");
-   console.log(x);
-   console.error("alert");
-   console.warn("warning");
-   console.groupEnd();
-   
-   const styles = "padding: 10px; background-color: white; color: green;";
-   console.log("%chello world", styles);
+  // Log number
+  console.log(100);
+  
+  // Log string
+  console.log('Hello World');
+  
+  // Log multiple values
+  console.log(20, 'Hello', true);
+  
+  // Log a variable
+  const x = 100;
+  console.log(x);
+  
+  // Console error & warning
+  console.error('Alert');
+  console.warn('Warning');
+  
+  // Log object as table
+  console.table({ name: 'Brad', email: 'brad@gmail.com' });
+  
+  // Group console commands
+  console.group('simple');
+  console.log(x);
+  console.error('Alert');
+  console.warn('Warning');
+  console.groupEnd();
+  
+  // Add CSS to logs
+  const styles = 'padding: 10px; background-color: white; color: green';
+  console.log('%cHello World', styles);    
             </code></pre>
         </div>
     </body>

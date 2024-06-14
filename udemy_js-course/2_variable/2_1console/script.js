@@ -1,23 +1,30 @@
+// Log number
 console.log(100);
 
-console.log("hello");
+// Log string
+console.log('Hello World');
 
-console.log(20, "hello", true);
+// Log multiple values
+console.log(20, 'Hello', true);
 
-const x = 50;
+// Log a variable
+const x = 100;
 console.log(x);
 
-console.error("alert");
+// Console error & warning
+console.error('Alert');
+console.warn('Warning');
 
-console.warn("warning");
+// Log object as table
+console.table({ name: 'Brad', email: 'brad@gmail.com' });
 
-console.table({ name: " Ana", email: "Ana@gmail.com" });
-
-console.group("simple");
+// Group console commands
+console.group('simple');
 console.log(x);
-console.error("alert");
-console.warn("warning");
+console.error('Alert');
+console.warn('Warning');
 console.groupEnd();
 
-const styles = "padding: 10px; background-color: white; color: green;";
-console.log("%chello world", styles);
+// Add CSS to logs
+const styles = 'padding: 10px; background-color: white; color: green';
+console.log('%cHello World', styles);

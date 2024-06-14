@@ -39,3 +39,9 @@ console.log(output5, typeof output5);
 const n = 414545444555n;
 const output6 = n;
 console.log(output6, typeof output6);
+
+// More info on why typeof null == object
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
+
+//  More info on the "function object" type
+// https://262.ecma-international.org/5.1/#sec-11.4.3
