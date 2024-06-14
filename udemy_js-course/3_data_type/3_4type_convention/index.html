@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Type Convention</title>
+        <link rel="stylesheet" href="../../css/intro.css" />
+    </head>
+    <body>
+        <h1>Type Convention</h1>
+        <script src="./script.js"></script>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="../../../index.html">JavaScript Intro</a>
+                    <a href="../../3_data_type/3_0intro/index.html">Data Typs intro</a>
+                    <a href="../../3_data_type/3_7strings/3_7intro/index.html">String Intro</a>
+                    <a href="../../4_arrays-objects/4_0intro/index.html">Arrays Intro</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="../../2_variable/2_1console/index.html">Console Log</a>
+                    <a href="../../2_variable/2_2variables/index.html">Variables</a>
+                    <a href="../../3_data_type/3_1primitive-data_types/index.html">Primitive Data Typs</a>
+                    <a href="../../3_data_type/3_2reference_typs/index.html">Reference Typs</a>
+                    <a href="../../3_data_type/3_3primitive_typs-vs-reference_typs/index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="../../3_data_type/3_4type_convention/index.html">Type Convention</a>
+                    <a href="../../3_data_type/3_5operators/index.html">Operators</a>
+                    <a href="../../3_data_type/3_6type_coercion/index.html">Type Coercion</a>
+                    <a href="../../3_data_type/3_7strings/index.html">String</a>
+                    <a href="../../3_data_type/3_8numbers/index.html">Numbers</a>
+                    <a href="../../3_data_type/3_9the_math_objects/index.html">The Math Objects </a>
+                    <a href="../../3_data_type/3_10dates-times/index.html">Date And Times</a>
+                    <a href="../../3_data_type/3_11date_object_methods/index.html">Date Object Methods</a>
+                    <a href="../../4_arrays-objects/4_1creating_array/index.html">Creating Arrays</a>
+                </nav>
+                <nav class="chalenges">
+                    <a href="../../../Chalenges/index.html">String-chalenge</a>
+                    <a href="../../../Chalenges/index2.html">Number-chalenge</a>
+                </nav>
+            </div>
+            <pre><code>
+            // convert a string to a number, methode parseInt
+            let amound = "100";
+            amound = parseInt(amound);
+            console.log(amound, typeof amound);
+            
+            // convert a string into a number ussing unery method
+            let amound1 = "100";
+            amound1 = +amound1;
+            console.log(amound1, typeof amound1);
+            
+            // convert a string into a number ussing the number or number constructor
+            let amound2 = "100";
+            amound2 = Number(amound2);
+            console.log(amound2, typeof amound2);
+            
+            // convert number to a string, methode toString
+            let amound3 = 100;
+            amound3 = amound3.toString();
+            console.log(amound3, typeof amound3);
+            
+            // convert a number into a string ussing string or string constructor
+            let amound4 = 100;
+            amound4 = String(amound4);
+            console.log(amound4, typeof amound4);
+            
+            // convert a string decimal to a number
+            let amound5 = "99.5";
+            amound5 = parseFloat(amound5);
+            console.log(amound5, typeof amound5);
+            
+            //convert number to boolean
+            let amound6 = 1;
+            amound6 = Boolean(amound6);
+            console.log(amound6, typeof amound6);
+            </code></pre>
+        </div>
+    </body>
+</html>
