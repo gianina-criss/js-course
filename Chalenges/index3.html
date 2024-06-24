@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../udemy_js-course/css/intro.css" />
+    </head>
+    <body>
+        <script src="./script3.js"></script>
+        <h1>Array - chalenge</h1>
+        <div class="page-content">
+            <div class="navigation">
+                <nav class="section-1">
+                    <a href="../index.html">JavaScript Intro</a>
+                    <a href="../udemy_js-course/3_data_type/3_0intro/index.html">Data Typs intro</a>
+                    <a href="../udemy_js-course/3_data_type/3_0intro/index.html">String Intro</a>
+                    <a href="../udemy_js-course/4_arrays-objects/4_0intro/index.html">Arrays Intro</a>
+                </nav>
+                <nav class="section-2">
+                    <a href="../udemy_js-course/2_variable/2_1console/index.html">Console Log</a>
+                    <a href="../udemy_js-course/2_variable/2_2variables/index.html">Variables</a>
+                    <a href="../udemy_js-course/3_data_type/3_1primitive-data_types/index.html">Primitive Data Typs</a>
+                    <a href="../udemy_js-course/3_data_type/3_2reference_typs/index.html">Reference Typs</a>
+                    <a href="../udemy_js-course/3_data_type/3_3primitive_typs-vs-reference_typs/index.html">Primitive Typs vs Reference Typs</a>
+                    <a href="../udemy_js-course/3_data_type/3_4type_convention/index.html">Type Convention</a>
+                    <a href="../udemy_js-course/3_data_type/3_5operators/index.html">Operators</a>
+                    <a href="../udemy_js-course/3_data_type/3_6type_coercion/index.html">Type Coercion</a>
+                    <a href="../udemy_js-course/3_data_type/3_7strings/index.html">String</a>
+                    <a href="../udemy_js-course/3_data_type/3_8numbers/index.html">Numbers</a>
+                    <a href="../udemy_js-course/3_data_type/3_9the_math_objects/index.html">The Math Objects </a>
+                    <a href="../udemy_js-course/3_data_type/3_10dates-times/index.html">Date And Times</a>
+                    <a href="../udemy_js-course/3_data_type/3_11date_object_methods/index.html">Date Object Methods</a>
+                    <a href="../udemy_js-course/4_arrays-objects/4_1creating_array/index.html">Creating Arrays</a>
+                </nav>
+                <nav class="chalenges">
+                    <a href="../../../Chalenges/index.html">String-chalenge</a>
+                    <a href="../../../Chalenges/index2.html">Number-chalenge</a>
+                </nav>
+            </div>
+            <pre><code>
+   //arr = [1,2,3,4,5] to arr = [6,5,4,3,2,1,0]
+   const arr = [1, 2, 3, 4, 5];
+   arr.push(6);
+   arr.unshift(0);
+   x = arr.reverse();
+   console.log(arr);
+   
+   // make one array from arr1 and arr2 and take out number 5
+   const arr1 = [1, 2, 3, 4, 5];
+   const arr2 = [5, 6, 7, 8, 9, 10];
+   
+   // solution 1
+   const arr3 = arr1.concat(arr2.slice(1));
+   console.log(arr3);
+   
+   // solution 2
+   const arr4 = [...arr1, ...arr2];
+   arr4.splice(4, 1);
+   console.log(arr4);
+   
+   // solution 3
+   const arr5 = arr1.slice(0, 4).concat(arr2);
+   console.log(arr5);
+     </code></pre>
+        </div>
+    </body>
+</html>

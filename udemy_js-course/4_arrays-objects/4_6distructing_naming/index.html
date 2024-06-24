@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Distructing & Naming Object Literals</title>
         <link rel="stylesheet" href="../../css/intro.css" />
     </head>
     <body>
+        <h1>Distructing & Naming Object Literals</h1>
         <script src="./script.js"></script>
-        <h1>Date Objects Methods</h1>
         <div class="page-content">
             <div class="navigation">
                 <nav class="section-1">
@@ -29,7 +29,7 @@
                     <a href="../../3_data_type/3_7strings/index.html">String</a>
                     <a href="../../3_data_type/3_8numbers/index.html">Numbers</a>
                     <a href="../../3_data_type/3_9the_math_objects/index.html">The Math Objects </a>
-                    <a href="../../3_data_type/3_10dates-times/index.html">Dates And Times</a>
+                    <a href="../../3_data_type/3_10dates-times/index.html">Date And Times</a>
                     <a href="../../3_data_type/3_11date_object_methods/index.html">Date Object Methods</a>
                     <a href="../../4_arrays-objects/4_1creating_array/index.html">Creating Arrays</a>
                 </nav>
@@ -39,64 +39,66 @@
                 </nav>
             </div>
             <pre><code>
-  // methods on the date objects
-  let x;
-  let d = new Date(); // initialize a date object in the d variable
+  const firstName = "Jhon";
+  const lastName = "Doe";
+  const age = 30;
   
-  // to string
-  x = d.toString();
-  console.log(x, typeof d);
+  // const person = {
+  //     firstName = firstName,
+  //     lastName = lastName,
+  //     age = age,
+  // };
   
-  // get time stamp
-  x = d.getTime();
-  x = d.valueOf();
-  console.log(x);
+  const person = {
+      firstName, //shorter version
+      lastName,
+      age,
+  };
   
-  // get specific parths of the date
-  x = d.getFullYear();
-  console.log(x);
+  console.log(person.age);
   
-  x = d.getMonth();
-  console.log(x);
+  // destructuring propertyes from the object
+  const todo = {
+      id: 1,
+      title: "take out the trash",
+      user: {
+          name: "Jhon",
+      },
+  };
   
-  x = d.getDay();
-  console.log(x);
+  const {
+      id,
+      title,
+      user: { name },
+  } = todo;
+  console.log(id, title, name);
   
-  x = d.getHours();
-  console.log(x);
+  // rename
+  const todo1 = {
+      id1: 2,
+      title1: "be happy",
+      user1: {
+          name1: "Maria",
+      },
+  };
   
-  x = d.getMinutes();
-  console.log(x);
+  const {
+      id1: renameId,
+      title1,
+      user1: { name1 },
+  } = todo1;
   
-  x = d.getSeconds();
-  console.log(x);
+  console.log(renameId, title1, name1);
   
-  //construct a date with methods
-  x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-  console.log(x);
+  // distructuring arrays
+  const numbers = [14, 24, 34, 44, 54];
+  const [first, second] = numbers;
+  console.log(first, second);
   
-  // format dates
-  x = Intl.DateTimeFormat("default").format(d);
-  console.log(x);
-  x = d.toLocaleString("default", { month: "short" }); //same thing as above
-  x = console.log(x);
-  
-  // mont in long format
-  x = Intl.DateTimeFormat("default", { month: "long" }).format(d);
-  console.log(x);
-  
-  x = d.toLocaleString("default", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      hour: "numeric",
-      minute: "numeric",
-      day: "numeric",
-      second: "numeric",
-      timeZone: "America/New_York",
-  });
-  console.log(x);
-
+  // rest operator aka spred operator using arrays
+  const numbers1 = [14, 24, 34, 44, 54];
+  const [first, second ...rest] = numbers;
+  console.log(first, second, rest);
             </code></pre>
         </div>
     </body>

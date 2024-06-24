@@ -28,7 +28,7 @@ x = arr.flat();
 
 // Static methods of Array object
 
-// isArray() - Check is is an array
+// isArray() - Check if is an array
 x = Array.isArray(fruits);
 
 // from() - Create an array from an array like value

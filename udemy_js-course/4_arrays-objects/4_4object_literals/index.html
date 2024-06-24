@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Object literal</title>
         <link rel="stylesheet" href="../../css/intro.css" />
     </head>
     <body>
+        <h1>Object Literal</h1>
         <script src="./script.js"></script>
-        <h1>Date Objects Methods</h1>
         <div class="page-content">
             <div class="navigation">
                 <nav class="section-1">
@@ -29,7 +29,7 @@
                     <a href="../../3_data_type/3_7strings/index.html">String</a>
                     <a href="../../3_data_type/3_8numbers/index.html">Numbers</a>
                     <a href="../../3_data_type/3_9the_math_objects/index.html">The Math Objects </a>
-                    <a href="../../3_data_type/3_10dates-times/index.html">Dates And Times</a>
+                    <a href="../../3_data_type/3_10dates-times/index.html">Date And Times</a>
                     <a href="../../3_data_type/3_11date_object_methods/index.html">Date Object Methods</a>
                     <a href="../../4_arrays-objects/4_1creating_array/index.html">Creating Arrays</a>
                 </nav>
@@ -39,64 +39,73 @@
                 </nav>
             </div>
             <pre><code>
-  // methods on the date objects
-  let x;
-  let d = new Date(); // initialize a date object in the d variable
-  
-  // to string
-  x = d.toString();
-  console.log(x, typeof d);
-  
-  // get time stamp
-  x = d.getTime();
-  x = d.valueOf();
-  console.log(x);
-  
-  // get specific parths of the date
-  x = d.getFullYear();
-  console.log(x);
-  
-  x = d.getMonth();
-  console.log(x);
-  
-  x = d.getDay();
-  console.log(x);
-  
-  x = d.getHours();
-  console.log(x);
-  
-  x = d.getMinutes();
-  console.log(x);
-  
-  x = d.getSeconds();
-  console.log(x);
-  
-  //construct a date with methods
-  x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-  console.log(x);
-  
-  // format dates
-  x = Intl.DateTimeFormat("default").format(d);
-  console.log(x);
-  x = d.toLocaleString("default", { month: "short" }); //same thing as above
-  x = console.log(x);
-  
-  // mont in long format
-  x = Intl.DateTimeFormat("default", { month: "long" }).format(d);
-  console.log(x);
-  
-  x = d.toLocaleString("default", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      hour: "numeric",
-      minute: "numeric",
-      day: "numeric",
-      second: "numeric",
-      timeZone: "America/New_York",
-  });
-  console.log(x);
+   let x;
 
+   const person = {
+       name: "jhon Doe",
+       age: 30,
+       isAdmin: true,
+   };
+   console.log(person);
+   
+   //to acces a specific property from an object
+   x = person.name;
+   x = person["age"];
+   console.log(x);
+   
+   //  an object inside an object
+   const person1 = {
+       name: "jhon Doe",
+       age: 30,
+       isAdmin: true,
+       address: {
+           street: "123 Main St",
+           city: "Boston",
+           state: "MA",
+       },
+   };
+   // to acces a property
+   x = person1.address.state;
+   console.log(x);
+   
+   // add arrays in the object
+   const person3 = {
+       name: "jhon Doe",
+       age: 30,
+       isAdmin: true,
+       address: {
+           street: "123 Main St",
+           city: "Boston",
+           state: "MA",
+       },
+       hobbies: ["music", "reading", "sports"],
+   };
+   
+   // acces a specific index from array
+   x = person3.hobbies[0];
+   console.log(x);
+   
+   // update property
+   person3.name = "Jane Doe";
+   x = person3;
+   console.log(x);
+   
+   // remove a property from an object
+   delete person3.age;
+   x = person3;
+   console.log(x);
+   
+   // add property
+   person3.hasChildren = true;
+   x = person3;
+   console.log(x);
+   
+   // ad a function as a property
+   person3.greet = function () {
+       console.log(`Hello, my name is ${this.name}`);
+   };
+   // call the fnction
+   person3.greet();
             </code></pre>
         </div>
     </body>
