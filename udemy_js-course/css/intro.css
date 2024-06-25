@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border-radius: 5px 5px 0 0;
 }
 
 .section-1 a {
@@ -86,6 +87,9 @@ body {
 h1,
 h2 {
     text-align: center;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
 }
 
 p {
