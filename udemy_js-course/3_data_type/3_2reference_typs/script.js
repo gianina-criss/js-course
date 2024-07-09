@@ -3,6 +3,7 @@
 const number = [1, 2, 3, 4];
 const output = number;
 console.log(output, typeof number);
+// rezult -- [1,2,3,4] `object`
 
 // object litteral
 const person = {
@@ -10,6 +11,7 @@ const person = {
 };
 const output1 = person;
 console.log(output1, typeof person);
+// rezult -- {name: Maia} `object`
 
 // function
 function sayHello() {
@@ -17,3 +19,4 @@ function sayHello() {
 }
 const output2 = sayHello;
 console.log(output2, typeof output2);
+// rezult -- say Hello() { console.log("Hello")}; `function`
