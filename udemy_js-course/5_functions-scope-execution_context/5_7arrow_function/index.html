@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Objects</title>
+        <title>Arrow Function</title>
         <link rel="stylesheet" href="../../css/intro.css" />
     </head>
     <body>
-        <h1>The Math Objects</h1>
+        <h1>Arrow Function</h1>
         <script src="./script.js"></script>
         <div class="page-content">
             <div class="navigation">
@@ -39,50 +39,42 @@
                 </nav>
             </div>
             <pre><code>
-  // Math -- object properties
-  console.log(Math);
-  
-  // get the squere ruth of a number
-  let x;
-  x = Math.sqrt(9);
-  console.log(x);
-  
-  // get the absolute number
-  x = Math.abs(5);
-  console.log(x);
-  
-  // round property
-  x = Math.round(4.6);
-  console.log(x);
-  
-  // round up property
-  x = Math.ceil(4.2);
-  console.log(x);
-  
-  // round down property
-  x = Math.floor(4.8);
-  console.log(x);
-  
-  //pow property
-  x = Math.pow(3, 6);
-  console.log(x);
-  
-  //min property -- returns the smalest numbers
-  x = Math.min(3, 4, 5);
-  console.log(x);
-  
-  //max property -- returns the bigest numbers
-  x = Math.max(3, 4, 5);
-  console.log(x);
-  
-  //random property -- gives a random decimal between 0 and 9
-  x = Math.random() * 10;
-  console.log(x);
-  
-  //random property -- gives a random number between 0 and 10
-  x = Math.floor(Math.random() * 10 + 1);
-  console.log(x);
-    </code></pre>
+    function add(a, b) {
+        return a + b;
+    }
+    
+    console.log(add(1, 2));
+    
+    // rewrite as an arrow function
+    const add1 = (a, b) => {
+        return a + b;
+    };
+    console.log(add1(1, 2));
+    
+    // shorten version (implicit return)
+    const add2 = (a, b) => a - b;
+    console.log(add2(10, 2));
+    
+    // function with a single parameter (can leave out () with a single parameter)
+    const add3 = (a) => a * 2;
+    console.log(add3(5));
+    
+    // returning an object
+    const createObj = () => ({
+        name: "Brad",
+    });
+    console.log(createObj());
+    
+    // array
+    const numbers = [1, 2, 3, 4];
+    numbers.forEach(function (n) {
+        console.log(n);
+    });
+    
+    // shorter version (arrow function in a callback)
+    numbers.forEach((n) => console.log(n));
+    
+           </code></pre>
         </div>
     </body>
 </html>

@@ -31,7 +31,7 @@ console.log(x);
 x = Math.min(3, 4, 5);
 console.log(x);
 
-//max property -- returns the smalest numbers
+//max property -- returns the bigest numbers
 x = Math.max(3, 4, 5);
 console.log(x);
 
